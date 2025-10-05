@@ -78,7 +78,8 @@ export default function UserMenu({ user }: UserMenuProps) {
           </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuSub>
+        {/* Commented out Theme submenu */}
+        {/* <DropdownMenuSub>
           <DropdownMenuSubTrigger>
             <Palette className="mr-2 h-4 w-4" />
             <span>Theme</span>
@@ -86,8 +87,9 @@ export default function UserMenu({ user }: UserMenuProps) {
           <DropdownMenuSubContent>
             <ThemeMenuItems />
           </DropdownMenuSubContent>
-        </DropdownMenuSub>
-        <DropdownMenuSub>
+        </DropdownMenuSub> */}
+        {/* Commented out Links submenu */}
+        {/* <DropdownMenuSub>
           <DropdownMenuSubTrigger>
             <Link2 className="mr-2 h-4 w-4" />
             <span>Links</span>
@@ -96,11 +98,12 @@ export default function UserMenu({ user }: UserMenuProps) {
             <ExternalLinkItems />
           </DropdownMenuSubContent>
         </DropdownMenuSub>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem onClick={handleLogout}>
+        <DropdownMenuSeparator /> */}
+        {/* Commented out Logout option */}
+        {/* <DropdownMenuItem onClick={handleLogout}>
           <LogOut className="mr-2 h-4 w-4" />
           <span>Logout</span>
-        </DropdownMenuItem>
+        </DropdownMenuItem> */}
       </DropdownMenuContent>
     </DropdownMenu>
   )
