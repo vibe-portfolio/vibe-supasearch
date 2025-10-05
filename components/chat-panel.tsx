@@ -1,7 +1,7 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import Textarea from 'react-textarea-autosize'
 
 import { Message } from 'ai'
@@ -11,11 +11,11 @@ import { Model } from '@/lib/types/models'
 import { cn } from '@/lib/utils'
 
 import { useArtifact } from './artifact/artifact-context'
+import { Button } from './ui/button'
 import { EmptyScreen } from './empty-screen'
+import { IconLogo } from './ui/icons'
 import { ModelSelector } from './model-selector'
 import { SearchModeToggle } from './search-mode-toggle'
-import { Button } from './ui/button'
-import { IconLogo } from './ui/icons'
 
 interface ChatPanelProps {
   input: string
