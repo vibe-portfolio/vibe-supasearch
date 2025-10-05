@@ -110,6 +110,7 @@ export function ChatPanel({
     }
   }
 
+  
   return (
     <div
       className={cn(
