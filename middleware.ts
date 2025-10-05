@@ -1,6 +1,9 @@
 import { updateSession } from '@/lib/supabase/middleware'
 import { type NextRequest, NextResponse } from 'next/server'
 
+// Specify Node.js runtime to avoid Edge Runtime warnings with Supabase
+export const runtime = 'nodejs'
+
 export async function middleware(request: NextRequest) {
   // Get the protocol from X-Forwarded-Proto header or request protocol
   const protocol =
